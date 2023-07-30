@@ -147,6 +147,7 @@ select{
 .ultima a{
     text-decoration: underline;
     color: #333;
+    padding: 0 2px;
 }
 @media screen and (max-width: 768px){
     header{
