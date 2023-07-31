@@ -51,6 +51,7 @@ section.box .box-single{
     padding: 20px;
     margin-bottom: 18px;
     color: #ffff;
+    font-size: 16px;
 }
 .box-single form input[type=text]::placeholder{
    color: #8c8c8c;
@@ -72,6 +73,25 @@ section.box .box-single{
     display: flex;
     justify-content: space-between;
     padding-bottom: 70px
+}
+.footer-form input[type=checkbox]{
+    display: none;
+}
+.footer-form label:before{
+    content: '';
+    display: inline-block;
+    border-radius: 4px;
+    border: 1px solid #737373;
+    width: 16px;
+    height: 16px;
+    vertical-align: top;
+    margin-right: 5px;
+    background-color: #737373;
+}
+.footer-form input[type=checkbox]:checked + label:before{
+    background-size: cover;
+    background-position: center;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --%3E%3Cstyle%3Esvg%7Bfill:%23ffffff%7D%3C/style%3E%3Cpath d='M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM337 209L209 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L303 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z'/%3E%3C/svg%3E");
 }
 form a,form label{
     color: #b3b3b3;
